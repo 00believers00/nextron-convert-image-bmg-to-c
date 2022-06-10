@@ -1,0 +1,12 @@
+appId: com.example.nextron
+productName: Convert Image
+copyright: Copyright © 2018 Atiwat Promarin
+directories:
+  output: dist
+  buildResources: resources
+files:
+  - from: .
+    filter:
+      - package.json
+      - app
+publish: null

@@ -1,0 +1,40 @@
+{
+  "private": true,
+  "name": "convert-image",
+  "description": "Bitmap 24 bit to 16bit out .c file",
+  "version": "1.0.0",
+  "author": "Atiwat Promarin <np.nawin@gmail.com>",
+  "main": "app/background.js",
+  "scripts": {
+    "dev": "nextron",
+    "build": "NODE_ENV=production nextron build",
+    "postinstall": "electron-builder install-app-deps",
+    "build:all": "nextron build --all",
+    "build:win32": "NODE_ENV=production nextron build --win --ia32",
+    "build:win64": "NODE_ENV=production nextron build --win --x64",
+    "build:mac": "NODE_ENV=production nextron build --mac --x64",
+    "build:mac-arm64": "NODE_ENV=production nextron build --mac --arm64",
+    "build:linux": "NODE_ENV=production nextron build --linux --arm64"
+  },
+  "dependencies": {
+    "@material-ui/icons": "^4.11.2",
+    "bmp-js": "^0.1.0",
+    "electron-serve": "^1.1.0",
+    "electron-store": "^8.0.0",
+    "file-saver": "^2.0.5",
+    "material-ui-dropzone": "^3.5.0",
+    "png-js": "^1.0.0"
+  },
+  "devDependencies": {
+    "@material-ui/core": "^4.12.2",
+    "@types/node": "^14.14.31",
+    "@types/react": "^16.9.49",
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7",
+    "next": "^11.0.1",
+    "nextron": "^7.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "typescript": "^4.3.5"
+  }
+}
